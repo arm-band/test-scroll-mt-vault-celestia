@@ -10,6 +10,9 @@
     },
     "author": "Arm Band",
     "license": "ISC",
+    "dependencies": {
+        "ukiyojs": "^3.0.0"
+    },
     "devDependencies": {
         "browser-sync": "^2.27.9",
         "gulp": "^4.0.2",

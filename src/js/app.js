@@ -1,10 +1,8 @@
-window.addEventListener('load', () => {
-    const helloMori = 'hello Mori!';
+import Ukiyo from 'ukiyojs';
 
-    console.log(helloMori);
-
-    const sHelloMori = document.querySelector('#hello');
-    if(sHelloMori !== undefined && sHelloMori !== null) {
-        sHelloMori.textContent = helloMori;
-    }
+window.addEventListener( 'load', () => {
+    const ukiyoParallaxes = document.querySelectorAll( '.ukiyo' );
+    ukiyoParallaxes.forEach( (ukiyoParallax) => {
+        new Ukiyo( ukiyoParallax );
+    });
 });
