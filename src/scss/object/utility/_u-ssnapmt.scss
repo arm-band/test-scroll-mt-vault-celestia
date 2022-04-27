@@ -1,9 +1,7 @@
 @charset "utf-8";
 
-@use "../../foundation" as f;
-
 /* scroll-margin-top によるアンカーリンクへのジャンプ時にコンテンツが隠れてしまう現象の抑止
  * css変数利用 */
 .u-ssnapmt {
-    scroll-margin-top: f.$nabvar-height;
+    scroll-margin-top: var(--navbar-height);
 }

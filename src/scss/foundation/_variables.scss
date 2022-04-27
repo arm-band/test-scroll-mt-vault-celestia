@@ -11,9 +11,9 @@ $link-color: color.adjust($main-color, $hue: 210deg);
 $link-v-color: color.scale($link-color, $lightness: -8%);
 $link-ha-color: color.scale($link-color, $lightness: 8%);
 $bg-color: #fff;
-$nabvar-height: 56px;
+$navbar-height: 56px;
 
 /* css変数 + Scss変数 */
 :root {
-    --navbar-height: #{$nabvar-height};
+    --navbar-height: #{$navbar-height};
 }
