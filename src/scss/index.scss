@@ -14,11 +14,12 @@
 ** object/utility                                **
 **                                               **
 ** ********************************************* */
-@use "object/utility/u-link"; //aタグの色
+@use "object/utility/u-link"; // aタグの色
+@use "object/utility/u-ssnapmt";
 
 /* ********************************************* **
 **                                               **
 ** object/component                              **
 **                                               **
 ** ********************************************* */
-@use "object/component/c-address";
+@use "object/component/c-eyecatch";

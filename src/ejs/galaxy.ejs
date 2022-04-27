@@ -1,13 +1,13 @@
 <%- include('partial/_util') -%>
 <%
     parameters = {
-        title: 'Home',
+        title: 'Galaxy',
         description: 'scroll-margin-top の検証ページです。ついでに scroll-behavior による他ページへのアンカーリンクの試験、 css変数 + HTMLへの直書き style によるページごとのキービジュアル画像の切り替えの試験、それから @media (prefers-color-scheme: dark) によるダークモードも試験しました。',
         ogp: {
             card: 'photo',
             account: 'Bredtn_1et',
             type: 'website',
-            image: 'https://source.unsplash.com/ROVBDer29PQ/1920x1080'
+            image: 'https://source.unsplash.com/3THn0EN_Ydo/1920x1080'
         },
         errFlag: false
     }
@@ -16,7 +16,6 @@
 <body id="<%= parameters.title.toLowerCase(); %>">
 <%- include('partial/_header') -%>
 <div class="p-3 p-sm-5 c-eyecatch" style="--img:url('<%= parameters.ogp.image %>')">
-    <!-- css変数で キービジュアル の画像をページごとに切替 -->
     <div class="container">
         <h1 class="display-4"><i class="fa-solid fa-fw fa-vault me-2" aria-hidden="true"></i><%= parameters.title %></h1>
         <p class="lead"><%= parameters.description %></p>
@@ -24,39 +23,39 @@
 </div>
 <main class="l-main">
     <section class="container py-5">
-        <h2 id="unus" class="u-ssnapmt">Lorem ipsum</h2>
+        <h2 id="aries" class="u-ssnapmt">Aries</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
-    <div class="p-3 p-sm-5 mb-4 c-eyecatch" style="--img:url('https://source.unsplash.com/lNxMcE8mvIM/1920x1080')">
+    <div class="p-3 p-sm-5 mb-4 c-eyecatch" style="--img:url('https://source.unsplash.com/9wH624ALFQA/1920x1080')">
     </div>
     <section class="container py-5">
-        <h2 id="duo" class="u-ssnapmt">Lorem ipsum</h2>
+        <h2 id="taurus" class="u-ssnapmt">Taurus</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
-    <div class="p-3 p-sm-5 mb-4 c-eyecatch" style="--img:url('https://source.unsplash.com/E9aetBe2w40/1920x1080')">
+    <div class="p-3 p-sm-5 mb-4 c-eyecatch" style="--img:url('https://source.unsplash.com/LN_g3qA8ohg/1920x1080')">
     </div>
     <section class="container py-5">
-        <h2 id="tres" class="u-ssnapmt">Lorem ipsum</h2>
+        <h2 id="gemini" class="u-ssnapmt">Gemini</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
-    <div class="p-3 p-sm-5 mb-4 c-eyecatch" style="--img:url('https://source.unsplash.com/DUC9n-do-7w/1920x1080')">
+    <div class="p-3 p-sm-5 mb-4 c-eyecatch" style="--img:url('https://source.unsplash.com/TIrXot28Znc/1920x1080')">
     </div>
     <section class="container py-5">
-        <h2 id="quattuor" class="u-ssnapmt">Lorem ipsum</h2>
+        <h2 id="leo" class="u-ssnapmt">Leo</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
-    <div class="p-3 p-sm-5 mb-4 c-eyecatch" style="--img:url('https://source.unsplash.com/8R7BE-piQqo/1920x1080')">
+    <div class="p-3 p-sm-5 mb-4 c-eyecatch" style="--img:url('https://source.unsplash.com/3jGU345xw2w/1920x1080')">
     </div>
     <section class="container py-5">
-        <h2 id="quinque" class="u-ssnapmt">Lorem ipsum</h2>
+        <h2 id="virgo" class="u-ssnapmt">Virgo</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

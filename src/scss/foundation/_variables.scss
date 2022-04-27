@@ -3,7 +3,7 @@
 @use "sass:color";
 
 $color: #333;
-$main-color: #ccc;
+$main-color: #3560A5;
 $main-color_d: color.scale($main-color, $lightness: -8%);
 $main-color_l: color.scale($main-color, $lightness: 8%);
 $accent-color: color.adjust($main-color, $hue: 150deg);
@@ -11,3 +11,9 @@ $link-color: color.adjust($main-color, $hue: 210deg);
 $link-v-color: color.scale($link-color, $lightness: -8%);
 $link-ha-color: color.scale($link-color, $lightness: 8%);
 $bg-color: #fff;
+$nabvar-height: 56px;
+
+/* css変数 + Scss変数 */
+:root {
+    --navbar-height: #{$nabvar-height};
+}

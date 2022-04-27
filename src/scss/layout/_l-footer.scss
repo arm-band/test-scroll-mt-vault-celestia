@@ -3,8 +3,13 @@
 @use "../foundation" as f;
 
 .l-footer {
-    position: fixed;
-    bottom: 0;
-    background-color: f.$main-color;
-    color: f.$color;
+    background-color: f.$main-color_l;
+    color: f.$bg-color;
+    #galaxy > & {
+        /* ダークモード対応 */
+        @media (prefers-color-scheme: dark) {
+            background-color: f.$main-color;
+            color: f.$bg-color;
+        }
+    }
 }

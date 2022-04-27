@@ -2,19 +2,25 @@
 <%
     parameters = {
         title: 'Error',
-        description: 'Gulpを使用した最低限のフレームワークです。',
+        description: 'scroll-margin-top の検証ページです。ついでに scroll-behavior による他ページへのアンカーリンクの試験、 css変数 + HTMLへの直書き style によるページごとのキービジュアル画像の切り替えの試験、それから @media (prefers-color-scheme: dark) によるダークモードも試験しました。',
         ogp: {
             card: 'photo',
             account: 'Bredtn_1et',
             type: 'website',
-            image: 'img/hinomotogo.png'
+            image: 'https://source.unsplash.com/8R7BE-piQqo/1920x1080'
         },
         errFlag: true
     }
 -%>
 <%- include('partial/_head', { parameters }) -%>
-<body>
+<body id="<%= parameters.title.toLowerCase(); %>">
 <%- include('partial/_header') -%>
+<div class="p-3 p-sm-5 mb-4 c-eyecatch" style="--img:url('<%= parameters.ogp.image %>')">
+    <div class="container">
+        <h1 class="display-4"><i class="fa-solid fa-fw fa-vault me-2" aria-hidden="true"></i><%= parameters.title %></h1>
+        <p class="lead"><%= parameters.description %></p>
+    </div>
+</div>
 <main class="l-main">
     <section class="container my-5">
         <h1>Error</h1>

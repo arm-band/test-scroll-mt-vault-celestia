@@ -5,4 +5,11 @@
 .l-main {
     background-color: f.$bg-color;
     color: f.$color;
+    #galaxy > & {
+        /* ダークモード対応 */
+        @media (prefers-color-scheme: dark) {
+            background-color: f.$color;
+            color: f.$bg-color;
+        }
+    }
 }

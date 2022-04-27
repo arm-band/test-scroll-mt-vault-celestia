@@ -1,8 +1,14 @@
 @charset "utf-8";
 
 @use "../foundation" as f;
+@use "sass:color";
 
 .l-header {
+    .navbar,
+    .dropdown-menu {
+        background-color: f.$bg-color;
+        color: f.$color;
+    }
     .navbar-brand {
         &,
         &:link,
@@ -13,6 +19,47 @@
         &:active,
         &:focus {
             color: f.$main-color_l;
+        }
+    }
+    #galaxy > & {
+        /* ダークモード対応 */
+        @media (prefers-color-scheme: dark) {
+            .navbar-brand {
+                &,
+                &:link,
+                &:visited {
+                    color: color.scale(f.$main-color, $lightness: 48%);
+                }
+                &:hover,
+                &:active,
+                &:focus {
+                    color: color.scale(f.$main-color_l, $lightness: 48%);
+                }
+            }
+            .navbar,
+            .dropdown-menu {
+                background-color: f.$color;
+                color: f.$bg-color;
+                .nav-link {
+                    &,
+                    &:link {
+                        color: color.scale(f.$link-color, $lightness: 48%);
+                    }
+                    &:visited {
+                        color: color.scale(f.$link-v-color, $lightness: 48%);
+                    }
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: color.scale(f.$link-ha-color, $lightness: 48%);
+                    }
+                }
+                .dropdown-item:focus,
+                .dropdown-item:hover {
+                    background-color: #1e2125;
+                    color: #e9ecef;
+                }
+            }
         }
     }
 }
