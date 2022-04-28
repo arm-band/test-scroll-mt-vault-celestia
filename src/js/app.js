@@ -1,4 +1,5 @@
 import Ukiyo from 'ukiyojs';
+import returnPageTop from './func/_returnpagetop';
 
 const hamburgerClose = (e) => {
     const navbar = document.querySelector('#navbar');
@@ -60,6 +61,10 @@ window.addEventListener('load', () => {
         navLink.addEventListener('click', hamburgerClose, false);
     });
 
+    // returnPageTop
+    new returnPageTop('#duo, #taurus', '.c-returnPageTop');
+
+    // parallax
     const ukiyoParallaxes = document.querySelectorAll('.ukiyo');
     ukiyoParallaxes.forEach((ukiyoParallax) => {
         new Ukiyo( ukiyoParallax, {
