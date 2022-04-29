@@ -1,11 +1,19 @@
+/**
+ * ページトップへ戻る
+ *
+ * constructor:
+ *
+ * @param {string} observeSelectorName - 監視対象要素のセレクタ名 (デフォルト: .l-main)
+ * @param {string} targetSelectorName  - クラス付与要素のセレクタ名 (デフォルト: .c-returnPageTop)
+ */
 class returnPageTop {
     /**
      * constructor
      *
-     * @param {string} observeSelectorName - 監視対象要素のセレクタ名
-     * @param {string} targetSelectorName  - クラス付与要素のセレクタ名
+     * @param {string} observeSelectorName - 監視対象要素のセレクタ名 (デフォルト: .l-main)
+     * @param {string} targetSelectorName  - クラス付与要素のセレクタ名 (デフォルト: .c-returnPageTop)
      */
-    constructor(observeSelectorName, targetSelectorName) {
+    constructor(observeSelectorName = '.l-main', targetSelectorName = '.c-returnPageTop') {
         // 監視対象要素
         this.observeElms = document.querySelectorAll(observeSelectorName);
         // DOM to Array
@@ -34,7 +42,7 @@ class returnPageTop {
         });
     }
     /**
-     * callback
+     * IntersectionObserver で指定するコールバック関数。ページトップへ戻るのクリック対象要素を、 targetSelectorName で指定した要素と交差するかを判定して、その結果で表示・非表示を切り替えるための .activeクラス の着脱を行う
      *
      * @param {Array} - elms
      */
@@ -57,7 +65,9 @@ class returnPageTop {
         }
     }
     /**
-     * フェードイン表示
+     * observeSelectorName で指定した複数の要素(ページトップへ戻るボタン)を IntersectionObserverクラス による監視対象とする
+     *
+     * @returns {Object} observer - IntersectionObserverクラス
      */
     rptShow = () => {
         // instance
